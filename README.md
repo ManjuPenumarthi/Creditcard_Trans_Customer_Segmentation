@@ -29,6 +29,7 @@ In total, there were around 85k customers analyzed in our project.
 
 # Data Modeling:
 We applied four different clustering algorithms to identify a similar group of customers.
+
 **K-means Clustering:**
 K-means clustering is a popular unsupervised machine learning algorithm used to partition a given dataset into K clusters or groups, based on the similarity of the data points within each cluster. The goal of the algorithm is to minimize the sum of squared distances between the data points and their assigned cluster centroids.
 The algorithm works as follows:
@@ -38,6 +39,7 @@ The algorithm works as follows:
 4. Recalculate the centroids of each cluster as the mean of the data points assigned to it.
 5. Repeat steps 3 and 4 until the algorithm converges, i.e., the cluster assignments no longer change.
 6. Finally, the algorithm returns the K cluster centroids and the assignment of each data point to a particular cluster.
+
 **Silhouette Score to find the best number of clusters in K-means:** After testing potential K values between 3 and 10; the higher silhouette score is shown at K=5. So, we chose 5 as the best value for K in this application in the K-means algorithm.
 
 **Mean Shift Clustering:**
@@ -49,6 +51,7 @@ The algorithm works as follows:
 4. Merge clusters that are close to each other by setting their centroids to be the average of the data points in both clusters.
 5. Repeat steps 2-4 until the centroids no longer move or the algorithm converges.
 6. Finally, the algorithm returns the cluster assignments of each data point.
+
 **Gaussian Mixture Clustering:**
 Gaussian Mixture Clustering is a popular unsupervised machine learning algorithm used to model the probability distribution of a dataset using a mixture of Gaussian distributions. It works by estimating the parameters of the Gaussian distributions that best fit the data and then assigning each data point to the Gaussian distribution with the highest probability.
 The algorithm works as follows:
@@ -57,6 +60,7 @@ The algorithm works as follows:
 3. M-Step: Update the model parameters, such as the mean and covariance matrix of each component, using the data points assigned to that component.
 4. Repeat steps 2 and 3 until the algorithm converges or a stopping criterion is met.
 5. Finally, the algorithm returns the model parameters and the cluster assignments of each data point.
+
 **BIRCH Clustering:**
 BIRCH (Balanced Iterative Reducing and Clustering using Hierarchies) is a hierarchical clustering algorithm used to cluster large datasets. It was designed to be memory-efficient and able to handle large datasets without having to store all data points in memory. Instead, BIRCH builds a tree-based data structure, known as a Clustering Feature Tree (CFT), which allows for the efficient clustering of large datasets.
 The algorithm works as follows:
