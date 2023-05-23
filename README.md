@@ -29,10 +29,11 @@ In total, there were around 85k customers analyzed in our project.
 First, we preprocessed the 16 million customer transaction records that made up the data that was provided and then grouped the customers based on the unique customer identifier.
 
 **Steps:**
-**Handling Missing Data:** Checked the dataset for null values and appended proper values where possible.
+# Handling Missing Data:
+Checked the dataset for null values and appended proper values where possible.
 The dataset consists of ~16 million rows and 11 columns. We replaced the missing values in the Merchant Name, Merchant City, and Merchant State columns with the most frequent value(mode).
 
-# Feature Engineering
+# Feature Engineering:
 Selected and transformed the relevant features in the dataset to improve the performance of a machine learning algorithm.
 **1. Industry Types:**
 ● **SIC Codes:** The SIC codes represent the merchant category. There are a total of 537 unique SIC codes in the dataset provided.
